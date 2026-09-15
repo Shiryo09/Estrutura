@@ -466,7 +466,10 @@ function renderizarCatalogo() {
   if (produtosFiltrados.length === 0) {
     grid.innerHTML = `
       <div class="empty-catalog">
-        <div class="empty-sigil">☠</div>
+        <div class="empty-sigil">
+          <img src="../site/img/banners/fear-and-hunger-coin-flip.gif" alt="Nenhum item encontrado" class="empty-gif" style="display: none;" onload="this.style.display='block'; const s = this.nextElementSibling; if(s) s.style.display='none';">
+          <span class="empty-fallback-skull">☠</span>
+        </div>
         <h3>Nenhum artefato encontrado</h3>
         <p>Nenhuma relíquia condizente com os filtros selecionados nas profundezas do catálogo.</p>
         <button type="button" class="btn btn-outline" id="btn-reset-filters">Limpar Filtros</button>

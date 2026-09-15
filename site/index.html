@@ -680,7 +680,10 @@
        ========================================================================= -->
   <dialog id="success-order-modal" class="custom-dialog">
     <div class="dialog-card modal-success-card">
-      <div class="success-icon">☠</div>
+      <div class="success-icon">
+        <img src="../site/img/banners/nas_ra.png" alt="Pedido Confirmado" class="success-img" style="display: none;" onload="this.style.display='block'; const s = this.nextElementSibling; if(s) s.style.display='none';">
+        <span class="success-fallback-skull">☠</span>
+      </div>
       <span class="success-tag">PEDIDO GRAVADO NO LIVRO DE ALMAS</span>
       <h2 class="success-title">PEDIDO CONFIRMADO COM SUCESSO</h2>
       

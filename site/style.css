@@ -913,6 +913,20 @@ ul {
   font-size: 3rem;
   color: var(--color-blood);
   margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.empty-sigil img,
+.empty-gif {
+  max-width: 140px;
+  max-height: 140px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  margin: 0 auto;
+  display: block;
 }
 
 .empty-catalog h3 {
@@ -1783,6 +1797,20 @@ ul {
   font-size: 3.5rem;
   color: var(--color-crimson);
   margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.success-icon img,
+.success-img {
+  max-width: 130px;
+  max-height: 130px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  margin: 0 auto;
+  display: block;
 }
 
 .success-tag {

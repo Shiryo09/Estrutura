@@ -2,7 +2,7 @@
  * STARVATION — Catálogo de Produtos & Coleções
  * Inspirado no universo Dark RPG de Fear & Hunger e nas obras de Kentaro Miura (Berserk).
  * Estrutura conforme Modelo Entidade-Relacionamento (MER.md) e Regras de Negócio (README.md).
- */
+ **/
 
 const CATEGORIAS = [
   {
@@ -248,9 +248,9 @@ const PRODUTOS = [
       'Acompanha estojo rúnico em veludo negro'
     ],
     imagens: [
-      'img/acessorios/anel-behelit-frente.svg',
-      'img/acessorios/anel-behelit-detalhe.svg',
-      'img/acessorios/anel-behelit-costas.svg'
+      'img/acessorios/anel-behelit-frente.jpg',
+      'img/acessorios/anel-behelit-lado.jpg',
+      'img/acessorios/anel-behelit-costas.jpg'
     ]
   },
   {
@@ -273,9 +273,9 @@ const PRODUTOS = [
       'Polimento rústico artesanal'
     ],
     imagens: [
-      'img/acessorios/colar-amulet-frente.svg',
-      'img/acessorios/colar-amulet-detalhe.svg',
-      'img/acessorios/colar-amulet-costas.svg'
+      'img/acessorios/colar-amulet-frente.jpg',
+      'img/acessorios/colar-amulet-lado.jpg',
+      'img/acessorios/colar-amulet-costas.jpg'
     ]
   },
   {
@@ -298,9 +298,9 @@ const PRODUTOS = [
       '7 furos para regulagem com ilhoses reforçados'
     ],
     imagens: [
-      'img/acessorios/cinto-iron-frente.svg',
-      'img/acessorios/cinto-iron-detalhe.svg',
-      'img/acessorios/cinto-iron-costas.svg'
+      'img/acessorios/cinto-iron-frente.jpg',
+      'img/acessorios/cinto-iron-lado.jpg',
+      'img/acessorios/cinto-iron-detalhes.jpg'
     ]
   }
 ];
