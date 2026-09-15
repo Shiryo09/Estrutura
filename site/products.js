@@ -173,9 +173,9 @@ const PRODUTOS = [
       'Acabamento interno com fita personalizada Starvation'
     ],
     imagens: [
-      'img/bones/bone-torment-frente.svg',
-      'img/bones/bone-torment-costas.svg',
-      'img/bones/bone-torment-detalhe.svg'
+      'img/bones/bone-torment-frente.jpg',
+      'img/bones/bone-torment-lado.jpg',
+      'img/bones/bone-torment-costas.jpg'
     ]
   },
   {
@@ -198,9 +198,9 @@ const PRODUTOS = [
       'Patch bordado de alta resolução'
     ],
     imagens: [
-      'img/bones/bone-sylvian-frente.svg',
-      'img/bones/bone-sylvian-costas.svg',
-      'img/bones/bone-sylvian-detalhe.svg'
+      'img/bones/bone-sylvian-frente.jpg',
+      'img/bones/bone-sylvian-lado.jpg',
+      'img/bones/bone-sylvian-costas.jpg'
     ]
   },
   {
@@ -223,9 +223,9 @@ const PRODUTOS = [
       'Toque macio que não pinica'
     ],
     imagens: [
-      'img/bones/gorro-crow-frente.svg',
-      'img/bones/gorro-crow-detalhe.svg',
-      'img/bones/gorro-crow-costas.svg'
+      'img/bones/gorro-crow-frente.jpg',
+      'img/bones/gorro-crow-lado.jpg',
+      'img/bones/gorro-crow-costas.jpg'
     ]
   },
   {
