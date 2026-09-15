@@ -133,6 +133,9 @@ ul {
 
 .rune-icon {
   color: var(--color-gold);
+  font-size: 0.95rem;
+  line-height: 1;
+  text-shadow: 0 0 6px rgba(197, 160, 89, 0.45);
 }
 
 /* --------------------------------------------------------------------------

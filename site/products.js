@@ -98,9 +98,9 @@ const PRODUTOS = [
       'Tag rúnica costurada na barra'
     ],
     imagens: [
-      'img/camisetas/tshirt-eclipse-frente.svg',
-      'img/camisetas/tshirt-eclipse-costas.svg',
-      'img/camisetas/tshirt-eclipse-detalhe.svg'
+      'img/camisetas/camisa_eclipse_frente.jpg',
+      'img/camisetas/camisa_eclipse_costas.jpg',
+      'img/camisetas/camisa_eclipse_detalhes.jpg'
     ]
   },
   {
@@ -123,9 +123,9 @@ const PRODUTOS = [
       'Acabamento em pesponto duplo'
     ],
     imagens: [
-      'img/camisetas/tshirt-grogoroth-frente.svg',
-      'img/camisetas/tshirt-grogoroth-costas.svg',
-      'img/camisetas/tshirt-grogoroth-detalhe.svg'
+      'img/camisetas/camisa_grogoroth_frente.jpg',
+      'img/camisetas/camisa_grogoroth_costas.jpg',
+      'img/camisetas/camisa_grogoroth_detalhes.jpg'
     ]
   },
   {
@@ -148,9 +148,9 @@ const PRODUTOS = [
       'Edição numerada com tiragem limitada de 50 peças'
     ],
     imagens: [
-      'img/camisetas/tshirt-termina-frente.svg',
-      'img/camisetas/tshirt-termina-costas.svg',
-      'img/camisetas/tshirt-termina-detalhe.svg'
+      'img/camisetas/camisa_termina_frente.jpg',
+      'img/camisetas/camisa_termina_costas.jpg',
+      'img/camisetas/camisa_termina_detalhes.jpg'
     ]
   },
   {
