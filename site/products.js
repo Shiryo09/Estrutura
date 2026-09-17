@@ -302,6 +302,64 @@ const PRODUTOS = [
       'img/acessorios/cinto-iron-lado.jpg',
       'img/acessorios/cinto-iron-detalhes.jpg'
     ]
+  },
+
+  /* ==========================================================================
+     [SEÇÃO - NOVO PRODUTO 1]: Personalize as informações do seu produto abaixo
+     ========================================================================== */
+  {
+    id_produto: 'STV-CAM-05',
+    nome: 'Camiseta Heavyweight Vazio Ancestral (Novo Produto)',
+    id_categoria: 'camisetas', // 'camisetas', 'bones' ou 'acessorios'
+    id_drop: 'drop-01',        // 'drop-01' (Ma'habre) ou 'drop-02' (Eclipse)
+    drop_nome: "Drop I: Ma'habre",
+    preco: 159.90,             // Preço em número com ponto (ex: 159.90)
+    estoque: 10,               // Quantidade em estoque
+    cor: 'Preto Carvão Vintage',
+    tamanhos: ['P', 'M', 'G', 'GG', 'XG'],
+    tamanho_selecionado: 'M',
+    tag: 'NOVO',               // 'NOVO', 'DROP ATIVO', 'EDIÇÃO LIMITADA', 'DESTAQUE', etc.
+    descricao: 'Insira aqui a descrição completa do seu novo produto. Explique o conceito da peça, a modelagem e os diferenciais visuais inspirados no universo Dark RPG.',
+    detalhes: [
+      'Malha premium 100% algodão encorpado',
+      'Gola canelada reforçada de 3cm',
+      'Estampa em silk corrosivo de alta durabilidade',
+      'Costura reforçada ombro a ombro'
+    ],
+    imagens: [
+      'img/camisetas/tshirt-mahabre-frente.svg',
+      'img/camisetas/tshirt-mahabre-costas.svg',
+      'img/camisetas/tshirt-mahabre-detalhe.svg'
+    ]
+  },
+
+  /* ==========================================================================
+     [SEÇÃO - NOVO PRODUTO 2]: Personalize as informações do seu produto abaixo
+     ========================================================================== */
+  {
+    id_produto: 'STV-BON-04',
+    nome: 'Boné Strapback Sigilo das Sombras (Novo Produto)',
+    id_categoria: 'bones',     // 'camisetas', 'bones' ou 'acessorios'
+    id_drop: 'drop-02',        // 'drop-01' (Ma'habre) ou 'drop-02' (Eclipse)
+    drop_nome: 'Drop II: Eclipse',
+    preco: 119.90,             // Preço em número com ponto (ex: 119.90)
+    estoque: 12,               // Quantidade em estoque
+    cor: 'Preto Desbotado & Carmesim',
+    tamanhos: ['Único'],
+    tamanho_selecionado: 'Único',
+    tag: 'NOVO',               // 'NOVO', 'DROP ATIVO', 'EDIÇÃO LIMITADA', 'DESTAQUE', etc.
+    descricao: 'Insira aqui a descrição completa do seu segundo produto. Detalhe materiais, tipo de fecho, bordados e acabamentos rústicos da peça.',
+    detalhes: [
+      'Sarja 100% algodão pré-lavada e macia',
+      'Bordado rúnico de alta resolução na parte frontal',
+      'Fecho ajustável tipo strapback em fivela de latão oxidado',
+      'Fita interna personalizada Starvation'
+    ],
+    imagens: [
+      'img/bones/bone-torment-frente.svg',
+      'img/bones/bone-torment-costas.svg',
+      'img/bones/bone-torment-detalhe.svg'
+    ]
   }
 ];
 

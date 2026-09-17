@@ -32,4 +32,8 @@ O sistema deve permitir:
 - Adicionar produtos aos pedidos.
 - Registrar a quantidade de cada produto presente em um pedido.
 - Consultar os pedidos realizados por um cliente.
---
+## Documentação e Guias
+
+- [Como Adicionar Produtos ao Catálogo](COMO_ADICIONAR_PRODUTOS.md) — Guia passo a passo para cadastrar novas peças, bonés e acessórios.
+- [Guia de Imagens da Marca](site/img/README.md) — Recomendações de proporções e substituição de fotos.
+- [Modelo Entidade-Relacionamento](modelagem/MER.md) — Estrutura de dados e entidades do sistema.
