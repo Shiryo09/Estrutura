@@ -958,10 +958,94 @@ ul {
   overflow: hidden;
 }
 
-.lookbook-media img {
+/* Container do Slider Lookbook */
+.lookbook-media {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 460px;
+  background: #040405;
+  overflow: hidden;
+}
+
+.lookbook-slides {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* Slides Individuais com transição suave em cross-fade e leve zoom */
+.lookbook-slide {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  transform: scale(1.03);
+  z-index: 1;
+}
+
+.lookbook-slide.active {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+  z-index: 2;
+}
+
+.lookbook-slide img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
+}
+
+/* Bolinhas de Navegação (Substituem as setas tradicionais) */
+.lookbook-dots {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.45rem 0.85rem;
+  background: rgba(8, 8, 10, 0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 999px;
+  z-index: 10;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.75);
+}
+
+.lookbook-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.28);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  padding: 0;
+  outline: none;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.lookbook-dot:hover {
+  background: var(--text-parchment);
+  transform: scale(1.2);
+  border-color: var(--color-gold);
+}
+
+/* Bolinha Ativa em formato pílula com brilho dourado Fear & Hunger */
+.lookbook-dot.active {
+  width: 26px;
+  height: 10px;
+  border-radius: 999px;
+  background: var(--color-gold);
+  border-color: var(--color-gold);
+  box-shadow: 0 0 10px rgba(197, 160, 89, 0.6);
 }
 
 .lookbook-content {
@@ -2213,6 +2297,10 @@ ul {
   .lookbook-banner-card {
     grid-template-columns: 1fr;
   }
+  .lookbook-media {
+    min-height: 380px;
+    height: 400px;
+  }
   .product-modal-grid {
     grid-template-columns: 1fr;
   }
@@ -2269,6 +2357,10 @@ ul {
   }
   .drops-cards-grid {
     grid-template-columns: 1fr;
+  }
+  .lookbook-media {
+    min-height: 280px;
+    height: 320px;
   }
   .footer-grid {
     grid-template-columns: 1fr;

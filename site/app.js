@@ -92,6 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
   configurarEventosGlobais();
   atualizarBadgeCarrinho();
   atualizarUIUsuario();
+  iniciarSliderLookbook();
 });
 
 /* ==========================================================================
@@ -1279,4 +1280,83 @@ function configurarEventosGlobais() {
   document.querySelectorAll('.btn-trigger-orders').forEach(btn => {
     btn.addEventListener('click', abrirModalMeusPedidos);
   });
+}
+
+/**
+ * ==========================================================================
+ * CARROSSEL / SLIDER DO LOOKBOOK EDITORIAL
+ * Suporta transição automática com o tempo e navegação por bolinhas clicáveis.
+ * Detecta dinamicamente a quantidade de slides adicionados ao HTML.
+ * ==========================================================================
+ */
+function iniciarSliderLookbook() {
+  const container = document.getElementById('lookbook-slider');
+  if (!container) return;
+
+  const slides = container.querySelectorAll('.lookbook-slide');
+  const dotsContainer = document.getElementById('lookbook-dots');
+  if (!slides || slides.length === 0) return;
+
+  let slideAtual = 0;
+  let timerAutoSlide = null;
+  const TEMPO_ROTACAO_MS = 4500; // Tempo de exibição de cada imagem: 4.5 segundos
+
+  function irParaSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.toggle('active', i === index);
+    });
+
+    if (dotsContainer) {
+      const dots = dotsContainer.querySelectorAll('.lookbook-dot');
+      dots.forEach((dot, i) => {
+        dot.classList.toggle('active', i === index);
+      });
+    }
+
+    slideAtual = index;
+  }
+
+  function proximoSlide() {
+    const proximoIndex = (slideAtual + 1) % slides.length;
+    irParaSlide(proximoIndex);
+  }
+
+  function reiniciarTimer() {
+    if (timerAutoSlide) clearInterval(timerAutoSlide);
+    if (slides.length > 1) {
+      timerAutoSlide = setInterval(proximoSlide, TEMPO_ROTACAO_MS);
+    }
+  }
+
+  // Gera as bolinhas clicáveis de acordo com a quantidade de imagens
+  if (dotsContainer && slides.length > 1) {
+    dotsContainer.innerHTML = '';
+    slides.forEach((_, idx) => {
+      const dot = document.createElement('button');
+      dot.type = 'button';
+      dot.className = `lookbook-dot ${idx === 0 ? 'active' : ''}`;
+      dot.setAttribute('aria-label', `Ver imagem ${idx + 1} do Editorial`);
+      dot.addEventListener('click', (e) => {
+        e.stopPropagation();
+        irParaSlide(idx);
+        reiniciarTimer();
+      });
+      dotsContainer.appendChild(dot);
+    });
+  } else if (dotsContainer) {
+    dotsContainer.innerHTML = '';
+  }
+
+  // Pausar rotação ao passar o mouse por cima
+  container.addEventListener('mouseenter', () => {
+    if (timerAutoSlide) clearInterval(timerAutoSlide);
+  });
+
+  container.addEventListener('mouseleave', () => {
+    reiniciarTimer();
+  });
+
+  // Inicia no primeiro slide
+  irParaSlide(0);
+  reiniciarTimer();
 }

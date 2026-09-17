@@ -211,8 +211,26 @@
     <section class="lookbook-section" id="lookbook">
       <div class="container">
         <div class="lookbook-banner-card">
-          <div class="lookbook-media">
-            <img src="img/banners/lookbook.svg" alt="Lookbook Starvation Editorial" />
+          <!-- Slider Editorial / Lookbook (Múltiplas imagens com troca automática e navegação por bolinhas) -->
+          <div class="lookbook-media" id="lookbook-slider">
+            <div class="lookbook-slides" id="lookbook-slides">
+              <!-- Slide 1 -->
+              <div class="lookbook-slide active">
+                <img src="img/banners/banner1.jpg" alt="Lookbook Starvation Editorial 01" />
+              </div>
+              <!-- Slide 2 -->
+              <div class="lookbook-slide">
+                <img src="img/banners/banner2.jpg" alt="Lookbook Starvation Editorial 02" />
+              </div>
+              <!-- Slide 3 -->
+              <div class="lookbook-slide">
+                <img src="img/banners/banner3.jpg" alt="Lookbook Starvation Editorial 03" />
+              </div>
+              <!-- Para adicionar mais imagens, basta duplicar o bloco <div class="lookbook-slide"> acima com a nova imagem -->
+            </div>
+
+            <!-- Navegação por Bolinhas (Substitui as setas, clicáveis e geradas dinamicamente) -->
+            <div class="lookbook-dots" id="lookbook-dots" role="tablist" aria-label="Navegação do Editorial Lookbook"></div>
           </div>
           <div class="lookbook-content">
             <span class="lookbook-tag">EDITORIAL & CONCEITO</span>
